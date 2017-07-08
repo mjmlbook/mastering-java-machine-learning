@@ -1,7 +1,7 @@
 # Chapter 4 - Semi-supervised and Active Learning
 
 ## Semi-supervised Learning experiments
-All experiments for SSL use the [Wisconsin Breast Cancer Dataset](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Original).
+All experiments for SSL use the [Wisconsin Breast Cancer Dataset](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Original)).
 ### JKernelMachines
 The example uses TransductiveSVM to train on 10% of the labeled data, treating the remainder as unlabeled data.  Validation, test and evaluation are omitted from the example.
 JKernelMachines source has been compiled into the library *jkernelmachines-3.0.jar*.
