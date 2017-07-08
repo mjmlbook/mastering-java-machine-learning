@@ -2,7 +2,7 @@
 
 ### Instructions for running experiments with [MOA](https://github.com/Waikato/moa)
 
-1. Download the dataset  [Electricity](http://downloads.sourceforge.net/project/moa-datastream/Datasets/Classification/elecNormNew.arff.zip?r=http%3A%2F%2Fmoa.cms.waikato.ac.nz%2Fdatasets%2F&ts=1483128450&use_mirror=cytranet). It is also availed as a zip archive in the data folder.
+1. Download the dataset  [Electricity](http://downloads.sourceforge.net/project/moa-datastream/Datasets/Classification/elecNormNew.arff.zip?r=http%3A%2F%2Fmoa.cms.waikato.ac.nz%2Fdatasets%2F&ts=1483128450&use_mirror=cytranet). It is also available as a zip archive in the data folder.
 
 2. [Download MOA](https://sourceforge.net/projects/moa-datastream/).
 
