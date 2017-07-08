@@ -1,0 +1,4 @@
+expt, learning evaluation instances,evaluation time (cpu seconds),model cost (RAM-Hours),classified instances,classifications correct (percent),Kappa Statistic (percent),Kappa Temporal Statistic (percent),Kappa M Statistic (percent),model training instances,model serialized size (bytes)
+
+SGD-W1000.txt, 45312.0,0.546875,3.553901074661149E-10,45312.0,53.300000000000004,0.0,-228.87323943661966,0.0,45312.0,2512.0
+

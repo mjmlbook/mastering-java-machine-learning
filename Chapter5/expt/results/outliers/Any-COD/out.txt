@@ -925,5 +925,5 @@ Algorithm2 Statistics:
   Max memory usage: 1075 MB
   Total process time: 30.04 ms
 
-FileStream -f /home/kchoppella/book/Chapter05/expt/elecNormNew.arff -K
+FileStream -f data/elecNormNew.arff -K
 AnyOut.AnyOut -M

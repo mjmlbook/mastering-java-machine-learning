@@ -8,6 +8,6 @@ Separation took 0.0ms (Mean:0.087844)
 SilhouetteCoefficient took 0.0ms (Mean:1.1791041777777778)
 StatisticalCollection took 0.0ms (Mean:0.6289897333333333)
 
-FileStream -f /home/kchoppella/book/Chapter05/expt/elecNormNew.arff -K
+FileStream -f data/elecNormNew.arff -K
 clustream.WithKmeans -k 10 -M
 clustream.WithKmeans

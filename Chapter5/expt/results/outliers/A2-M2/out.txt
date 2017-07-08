@@ -927,5 +927,5 @@ Algorithm2 Statistics:
   Max memory usage: 536 MB
   Total process time: 0.98 ms
 
-FileStream -f /home/kchoppella/book/Chapter05/expt/elecNormNew.arff -K
+FileStream -f data/elecNormNew.arff -K
 Angiulli.ApproxSTORM -t 2

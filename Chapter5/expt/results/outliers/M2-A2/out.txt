@@ -1,4 +1,4 @@
-FileStream -f /home/kchoppella/book/Chapter05/expt/elecNormNew.arf
+FileStream -f data/elecNormNew.arf
 f -K
 MCOD.MCOD -t 2 Angiulli.ApproxSTORM -t 2
 

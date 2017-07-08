@@ -1,0 +1,4 @@
+expt, learning evaluation instances,evaluation time (cpu seconds),model cost (RAM-Hours),classified instances,classifications correct (percent),Kappa Statistic (percent),Kappa Temporal Statistic (percent),Kappa M Statistic (percent),model training instances,model serialized size (bytes)
+
+NaiveBayes-W5000.txt, 45312.0,0.640625,7.34516005549166E-10,45312.0,77.84,54.19656222876552,-41.14649681528661,53.98671096345515,45312.0,4432.0
+

@@ -1,0 +1,3 @@
+expt, learning evaluation instances,evaluation time (cpu seconds),model cost (RAM-Hours),classified instances,classifications correct (percent),Kappa Statistic (percent),Kappa Temporal Statistic (percent),Kappa M Statistic (percent),model training instances,model serialized size (bytes)
+
+LazykNN-W1000.txt, 45312.0,35.875,4.826730065461662E-6,45312.0,82.5,64.80487824499022,-23.23943661971833,62.52676659528906,45312.0,520072.0

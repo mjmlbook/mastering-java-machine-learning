@@ -6,6 +6,6 @@ RegressionAccuracy took 0.0ms (Mean:0.0)
 SSQ took 0.0ms (Mean:0.0663876)
 SilhouetteCoefficient took 0.0ms (Mean:0.997942711111111)
 
-FileStream -f /home/kchoppella/book/Chapter05/expt/elecNormNew.arff -K
+FileStream -f data/elecNormNew.arff -K
 clustree.ClusTree -h 5000
 clustream.Clustream

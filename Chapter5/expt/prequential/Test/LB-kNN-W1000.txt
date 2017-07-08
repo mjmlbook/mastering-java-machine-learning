@@ -1,0 +1,4 @@
+expt, learning evaluation instances,evaluation time (cpu seconds),model cost (RAM-Hours),classified instances,classifications correct (percent),Kappa Statistic (percent),Kappa Temporal Statistic (percent),Kappa M Statistic (percent),model training instances,model serialized size (bytes),ensemble size,change detections,[avg] model training instances,[err] model training instances,[avg] model serialized size (bytes),[err] model serialized size (bytes)
+
+LB-kNN-W1000.txt, 45312.0,655.8125,2.961991100002908E-4,45312.0,82.39999999999999,64.58025590765105,-23.943661971831006,62.31263383297644,45312.0,1745848.0,10.0,24.0,172407.0,37134.54132296058,519432.0,0.0
+
