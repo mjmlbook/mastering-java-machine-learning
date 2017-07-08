@@ -1,4 +1,4 @@
-package org.mmlj.chapter9.expts;
+package org.mjml.ch9.expts;
 
 import java.io.BufferedWriter;
 import java.nio.file.Files;
@@ -27,7 +27,7 @@ public class GaussianMixtureModelExpt {
 				.getOrCreate();
 
 		// Load and parse data
-		String filePath = "/home/kchoppella/book/Chapter09/data/covtypeNorm.csv";
+		String filePath = "data/covtypeNorm.csv";
 
 		// Loads data.
 		Dataset<Row> inDataset = spark.read()
@@ -53,7 +53,7 @@ public class GaussianMixtureModelExpt {
 
 		Dataset<Row> result = pca.transform(dataset).select("pcaFeatures").withColumnRenamed("pcaFeatures", "features");
 		
-		String outPath = "/home/kchoppella/book/Chapter09/data/gmm_params.csv";
+		String outPath = "data/gmm_params.csv";
 
 		try {
 			BufferedWriter writer = Files.newBufferedWriter(Paths.get(outPath));

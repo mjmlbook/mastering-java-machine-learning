@@ -1,4 +1,4 @@
-package org.mmlj.chapter9.expts;
+package org.mjml.ch9.expts;
 
 import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator;
 import org.apache.spark.ml.feature.IndexToString;
@@ -34,7 +34,7 @@ public class RandomForestExpt {
 				.getOrCreate();
  
 		// Load and parse data
-		String filePath = "/home/kchoppella/book/Chapter09/data/covtypeNorm.csv";
+		String filePath = "data/covtypeNorm.csv";
 
 		// Loads data.
 		Dataset<Row> inDataset = spark.read()
@@ -104,7 +104,7 @@ public class RandomForestExpt {
 		  .setLabelCol("indexedLabel")
 		  .setPredictionCol("prediction");
 		
-		String outPath = "/home/kchoppella/book/Chapter09/data/randomforest_evaluation.csv";
+		String outPath = "data/randomforest_evaluation.csv";
 		
 		try {
 			BufferedWriter writer = Files.newBufferedWriter(Paths.get(outPath));

@@ -1,4 +1,4 @@
-package org.mmlj.chapter9.expts;
+package org.mjml.ch9.expts;
 
 import org.apache.spark.sql.SparkSession;
 
@@ -20,7 +20,7 @@ public class PCAExpt {
 				.getOrCreate();
 
 		// Load and parse data
-		String filePath = "/home/kchoppella/book/Chapter09/data/covtypeNorm.csv";
+		String filePath = "data/covtypeNorm.csv";
 
 		// Loads data.
 		Dataset<Row> inDataset = spark.read()

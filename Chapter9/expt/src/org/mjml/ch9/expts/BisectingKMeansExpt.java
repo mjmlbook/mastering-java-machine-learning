@@ -1,8 +1,8 @@
-package org.mmlj.chapter9.expts;
+package org.mjml.ch9.expts;
 
-import org.apache.spark.ml.clustering.KMeansModel;
 import org.apache.spark.ml.feature.VectorAssembler;
-import org.apache.spark.ml.clustering.KMeans;
+import org.apache.spark.ml.clustering.BisectingKMeans;
+import org.apache.spark.ml.clustering.BisectingKMeansModel;
 import org.apache.spark.ml.linalg.Vector;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
@@ -10,16 +10,16 @@ import org.apache.spark.sql.SparkSession;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class KMeansExpt {
+public class BisectingKMeansExpt {
 	public static void main(String[] args) {
 
 		SparkSession spark = SparkSession.builder()
 				.master("local[8]")
-				.appName("KMeansExpt")
+				.appName("BisectingKMeansExpt")
 				.getOrCreate();
  
 		// Load and parse data
-		String filePath = "/home/kchoppella/book/Chapter09/data/covtypeNorm.csv";
+		String filePath = "data/covtypeNorm.csv";
 
 		// Loads data.
 		Dataset<Row> inDataset = spark.read()
@@ -27,9 +27,9 @@ public class KMeansExpt {
 				.option("header", "true")
 				.option("inferSchema", true)
 				.load(filePath);
-		ArrayList<String> inputColsList = new ArrayList<String>(Arrays.asList(inDataset.columns()));
 		
 		//Make single features column for feature vectors 
+		ArrayList<String> inputColsList = new ArrayList<String>(Arrays.asList(inDataset.columns()));
 		inputColsList.remove("class");
 		String[] inputCols = inputColsList.parallelStream().toArray(String[]::new);
 		
@@ -37,8 +37,9 @@ public class KMeansExpt {
 		VectorAssembler assembler = new VectorAssembler().setInputCols(inputCols).setOutputCol("features");
 		Dataset<Row> dataset = assembler.transform(inDataset);
 
-		KMeans kmeans = new KMeans().setK(27).setSeed(1L);
-		KMeansModel model = kmeans.fit(dataset);
+		// Trains a bisecting k-means model.
+		BisectingKMeans bkm = new BisectingKMeans().setK(27).setSeed(1);
+		BisectingKMeansModel model = bkm.fit(dataset);
 
 		// Evaluate clustering by computing Within Set Sum of Squared Errors.
 		double WSSSE = model.computeCost(dataset);
