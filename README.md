@@ -1,5 +1,5 @@
 # Mastering Java Machine Learning - Packt
-Experiments, results and additional material from [Mastering Java Machine Learning (Packt Publishing)]((https://www.packtpub.com/big-data-and-business-intelligence/mastering-java-machine-learning))
+Experiments, results and additional material from [Mastering Java Machine Learning (Packt Publishing)](https://www.packtpub.com/big-data-and-business-intelligence/mastering-java-machine-learning)
 
 [![book](https://d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/new5137.png "Book cover")](https://www.packtpub.com/big-data-and-business-intelligence/mastering-java-machine-learning)
 
