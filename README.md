@@ -6,7 +6,7 @@ Experiments, results and additional material from [Mastering Java Machine Learni
 The only requirements to make use the material in this GitHub project is Java JDK 8 and git.  Each of the chapters introduces one or more open source Java libraries or entire machine learning frameworks.  To take full advantage of the techniques presented in the book, you can download the software from the links given here and use the case studies in each chapter as a guide to exploring the tools and methods for yourself.
 
 As a quick recap, these are the chapters:
-- Chapter 1 - Machine Learning Review - none
+- Chapter 1 - Machine Learning Review
 - Chapter 2 - Practical Approach to Real-World Supervised Learning
 - Chapter 3 - Unsupervised Learning
 - Chapter 4 - Semi-Supervised and Active Learning
