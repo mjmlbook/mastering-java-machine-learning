@@ -11,7 +11,7 @@ Normally, you can open the *Configure* dialog by double-clicking any node, but f
 
 ![NLP2](expt/FileReader_configure_dialog.png "Configure File Reader node")
 
-After the **File Reader** is configured, you scan execute the workflow incrementally to any node you wish and examine the intermediate outputs.  To run any of the classification tasks to completion, you can execute the corresponding **Scorer** node.
+After the **File Reader** is configured, you can execute the workflow incrementally up to any node you wish and examine the intermediate outputs.  To run any of the classification tasks to completion, simply execute the corresponding **Scorer** node.
 
 In the workflow below, note that the *Transformation* block uses **Binary Term Vector** node.  Only the **Term Filtering** and **Document Vector** nodes need to be re-configured to use __Relative TF Vector__ or __Relative TF Vector with Threshold Filtering__.
 
@@ -25,7 +25,7 @@ The screenshot below shows the nested workflow within the **Document Vector** un
 
 
 ## Configuring the Decision Tree Learner
-The **X-Partitioner** node is used to configure number of cross-validation folds and the sampling method.
+The **X-Partitioner** node is used to configure the number of cross-validation folds and the sampling method.
 
 
 
